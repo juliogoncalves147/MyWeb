@@ -1,10 +1,11 @@
 {
-  "homepage": "https://juliogoncalves147.github.io/MyWeb",
+  "homepage": "https://juliogoncalves147.github.io",
   "name": "julio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
