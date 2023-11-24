@@ -1,8 +1,8 @@
 {
-  "homepage": "https://juliogoncalves147.github.io/MyWeb",
+  "homepage": "https://juliogoncalves147.github.io",
   "name": "julioo",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
