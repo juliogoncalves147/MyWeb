@@ -30,6 +30,15 @@ const styles = {
     'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
   sectionSubTextLight:
     'sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins',
+    languageSwitcher: 'flex items-center space-x-4 pt-[98px]',
+
+  languageOption: 'text-[16px] font-semibold text-taupe uppercase tracking-wider font-poppins transition-colors',
+  cursorPointer: 'cursor-pointer hover:text-primary',
+
+  separator: 'text-taupe',
+
+  selectedLanguage: 'text-primary', // Add a class for the selected language
+  primaryColor: '#007bff',
 };
 
 export { styles };

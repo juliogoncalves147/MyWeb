@@ -6,16 +6,41 @@ import { close, menu, logo, logotext } from '../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
+  const { t , i18n } = useTranslation();
+  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setCurrentLanguage(lang);
+  };
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-2 fixed 
       top-0 z-20 bg-[#d1d7e1] sm:opacity-[0.97] xxs:h-[12vh]`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className=" ${styles.languageSwitcher} ${styles.navPadding} w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div>
+      <span
+    onClick={() => changeLanguage('pt')}
+    className={`${styles.languageOption} ${styles.cursorPointer} ${i18n.language === 'pt' ? styles.selectedLanguage : ''}`}
+  >
+    PT
+  </span>
+  <span className={`${styles.separator}`}> | </span>
+  <span
+    onClick={() => changeLanguage('en')}
+    className={`${styles.languageOption} ${styles.cursorPointer} ${i18n.language === 'en' ? styles.selectedLanguage : ''}`}
+  >
+    EN
+  </span>
+  </div>
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -28,7 +53,6 @@ const Navbar = () => {
             alt="logo"
             className="sm:w-[50px] sm:h-[50px] w-[45px] h-[45px] object-contain"
           />
-
           {/* if you have text you want besides your logo it comes here.
           Otherwise delete this if you don't need it. */}
           <img

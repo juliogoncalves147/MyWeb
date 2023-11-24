@@ -4,6 +4,7 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import { useTranslation } from 'react-i18next';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -27,6 +28,7 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
@@ -37,11 +39,11 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        I'm a Software Engineer recently graduated from the University of Minho, currently enrolled in the Master in Distributed Systems Engineering and Languages. Surprised by this parallel world of programming in recent years, I have been working on several projects, both personal and academic, to improve my skills and knowledge in the area.
-        <br />
-        <br />
-        Born and raised in Portugal, the commitment and consistency of my work are two of my main characteristics.</motion.p>
-
+          {t('about.1')}
+          <br />
+          <br />
+          {t('about.2')}
+        </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
