@@ -38,7 +38,8 @@ import {
   dcc,
   kelhel,
   microverse,
-  mysql
+  mysql,
+  wroclaw
 } from '../assets';
 
 export const navLinks = [
@@ -79,10 +80,6 @@ const technologies = [
   {
     name: 'CSS',
     icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
   },
   {
     name: 'React JS',
@@ -168,13 +165,21 @@ const experiences = [
     date: 'Sep 2022 - Jun 2024',
   },
   { 
-    subtitle: '',
+    subtitle: 'Xray by XBlend',
     title: 'Junior Software Engineer',
     company_name: 'SNGULAR',
     icon: sngular,
     iconBg: '#333333',
     date: 'Apr 2023 - Present',
   },
+  {
+    subtitle: 'Exchange Semester',
+    title: 'ARQUS Alliance Program',
+    company_name: 'Uniwersytet Wroclawski',
+    icon: wroclaw,
+    iconBg: '#333333',
+    date: 'Oct 2023 - Fev 2024',
+  }
 ];
 
 const projects = [

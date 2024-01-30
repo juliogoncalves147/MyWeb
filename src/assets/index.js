@@ -54,6 +54,7 @@ import domDiogo from './company/domdiogo.png';
 import uminho from './company/uminho.png';
 import sngular from './company/sngular.png';
 import travizco from './company/travizco.png';
+import wroclaw from './company/wroclaw.jpeg';
 
 import cv from './cv/cv.pdf';
 
@@ -125,4 +126,5 @@ export {
   dcc,
   kelhel,
   microverse,
+  wroclaw
 };

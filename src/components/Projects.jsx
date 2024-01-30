@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { github, pineapple, pineappleHover } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
+import { useTranslation } from 'react-i18next';
 
 const ProjectCard = ({
   id,
@@ -111,6 +112,7 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [active, setActive] = useState('project-2');
 
   return (
@@ -124,11 +126,7 @@ const Projects = () => {
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          {t('projetos.descricao')}
         </motion.p>
       </div>
 

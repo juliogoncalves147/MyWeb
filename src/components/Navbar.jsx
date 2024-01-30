@@ -30,6 +30,7 @@ const Navbar = () => {
       <span
     onClick={() => changeLanguage('pt')}
     className={`${styles.languageOption} ${styles.cursorPointer} ${i18n.language === 'pt' ? styles.selectedLanguage : ''}`}
+    style={{ fontWeight: i18n.language === 'pt' ? 'bold' : '#858585', color: i18n.language === 'pt' ? 'black' : '#858585' } }
   >
     PT
   </span>
@@ -37,6 +38,7 @@ const Navbar = () => {
   <span
     onClick={() => changeLanguage('en')}
     className={`${styles.languageOption} ${styles.cursorPointer} ${i18n.language === 'en' ? styles.selectedLanguage : ''}`}
+    style={{ fontWeight: i18n.language === 'en' ? 'bold' : '#858585', color: i18n.language === 'en' ? 'black' : '#858585'}}
   >
     EN
   </span>
@@ -95,7 +97,7 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-              <li className="text-[35px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links">
+          <li className="text-[35px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links">
             <a href="https://www.linkedin.com/in/juliogoncalvess/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} style={{ color: 'black' }} />
             </a>
@@ -108,12 +110,12 @@ const Navbar = () => {
             <p style={{color: 'black'}}> Email </p>
           </li>
           <li className="text-[35px] font-medium font-mova uppercase tracking-[3px] cursor-pointer nav-links">
-            <a href="https://github.com/juliogoncalves147">
+            <a href="https://github.com/juliogoncalves147" target="_newtab">
               <FontAwesomeIcon icon={faGithub} style={{ color: 'black' }}/>
             </a>
             <p style={{color: 'black'}}> GitHub </p>
           </li>
-            </div>
+        </div>
           ) : (
             <img
               src={menu}

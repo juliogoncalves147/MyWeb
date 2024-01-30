@@ -76,7 +76,7 @@ const Experience = () => {
               background: '#eaeaec',
               color: '#292929',
               boxShadow:
-                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+                'rgba(100, 100, 100, 1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
@@ -105,7 +105,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() =>
                 window.open(
-                  '../src/assets/cv/CV.pdf', //paste the link to your resume here
+                  '/src/assets/cv/CV.pdf', //paste the link to your resume here
                   '_blank'
                 )
               }

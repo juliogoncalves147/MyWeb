@@ -38,11 +38,20 @@ const About = () => {
 
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
-        className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          {t('about.1')}
-          <br />
-          <br />
-          {t('about.2')}
+        className="mt-4 max-w-3xl text-taupe">
+          <p className="text-[18px] leading-[30px] mb-[-10px]">
+    {t('about.1')}
+    <br />
+    <br />
+    {t('about.2')}
+  </p>
+  <style jsx>{`
+    p {
+      text-align: justify;
+      
+    }
+  `}</style>
+          
         </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
