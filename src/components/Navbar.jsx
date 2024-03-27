@@ -18,6 +18,7 @@ const Navbar = () => {
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setCurrentLanguage(lang);
+    localStorage.setItem('userLang', lang); // Store the user's language preference
   };
 
   useEffect(() => {
