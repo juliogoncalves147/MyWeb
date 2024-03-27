@@ -65,6 +65,11 @@ import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 
+import topology from './projects/topology.png';
+import bets from './projects/bets.jpg';
+import gcp from './projects/GCP.jpg';
+import paralel from './projects/paralel.jpg';
+import javaV2 from './projects/java.jpg';
 
 
 export {
@@ -126,5 +131,10 @@ export {
   dcc,
   kelhel,
   microverse,
-  wroclaw
+  wroclaw,
+  topology,
+  bets,
+  gcp,
+  paralel,
+  javaV2,
 };

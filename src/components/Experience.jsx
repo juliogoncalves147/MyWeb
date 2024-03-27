@@ -103,12 +103,12 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  '/src/assets/cv/CV.pdf', //paste the link to your resume here
-                  '_blank'
-                )
-              }
+              onClick={() => {
+                const downloadLink = document.createElement('a');
+                downloadLink.href = 'https://raw.githubusercontent.com/juliogoncalves147/juliogoncalves147.github.io/main/src/assets/cv/CV.pdf';
+                downloadLink.download = 'CV.pdf'; 
+                downloadLink.click();
+              }}
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
