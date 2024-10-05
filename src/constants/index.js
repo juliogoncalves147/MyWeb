@@ -190,6 +190,14 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
+    name: 'LaTeX CV Tool',
+    description: `Development of a tool that allows to manage and filter an LaTeX Curriculum trought a designed domain-specific language.`,
+    technologies: 'Python, React, Lark-Parser, FastAPI, Docker',
+    image: paralel,
+    repo: 'http://cvtool.epl.di.uminho.pt/',
+  },
+  {
+    id: 'project-2',
     name: 'Stream Protocol',
     description: 'Development of a real-time streaming protocol for Text, Audio, and Video through an Over-the-top Service.',
     technologies: 'Java, Threads, Common Open Research Emulator',
@@ -197,7 +205,7 @@ const projects = [
     repo: 'https://github.com/juliogoncalves147/Stream-Protocol',
   },
   {
-    id: 'project-2',
+    id: 'project-3',
     name: 'Bets Book',
     description:
       'A real-time program that gives the best odds for each game in the top five European football leagues across various betting websites, empowering users with instant and strategic betting insights.',
@@ -206,7 +214,7 @@ const projects = [
     repo: 'https://github.com/juliogoncalves147/BetsBook',
   },
   {
-    id: 'project-3',
+    id: 'project-4',
     name: 'Ansible Playbook',
     description: 'Automation of the Installation, Configuration, Monitoring and Evaluation Process of a \"Ghost.org & MySQL\" Service',
     technologies: 'Ansible Playbook, Docker, Google Cloud Platform, Kubernets',
@@ -214,18 +222,10 @@ const projects = [
     repo: 'https://github.com/juliogoncalves147/Ansible-Playbook',
   },
   {
-    id: 'project-4',
-    name: 'Parallel Programming',
-    description: `Implementation of different parallel programming techniques in C (OpenMP, MPI) to k-means algorithm and respective performance evaluation.`,
-    technologies: 'C, OpenMP, MPI',
-    image: paralel,
-    repo: 'https://github.com/juliogoncalves147/Parallel-Programing',
-  },
-  {
     id: 'project-5',
     name: 'Management System',
     description:
-      'Query and management system for a classification/recommendation service for for commercial establishments based on user preferences. You can find the same project, developed in C, in the repository parent',
+      'Query and management system for a classification/recommendation service for commercial establishments based on user preferences. You can find the same project, developed in C, in the repository parent',
     technologies: 'Java',
     image: javaV2,
     repo: 'https://github.com/juliogoncalves147/TP-JAVA-Gestao-Consulta-de-Dados',
