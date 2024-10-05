@@ -56,7 +56,7 @@ import sngular from './company/sngular.png';
 import travizco from './company/travizco.png';
 import wroclaw from './company/wroclaw.jpeg';
 
-import cv from './cv/cv.pdf';
+import cv from './cv/CV.pdf';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
