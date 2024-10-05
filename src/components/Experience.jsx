@@ -105,7 +105,7 @@ const Experience = () => {
               ease-in-out"
               onClick={() => {
                 const downloadLink = document.createElement('a');
-                downloadLink.href = 'https://juliogoncalves147.github.io/public/CV.pdf';
+                downloadLink.href = 'https://raw.githubusercontent.com/juliogoncalves147/juliogoncalves147.github.io/main/public/CV.pdf';
                 downloadLink.download = 'CV.pdf'; 
                 downloadLink.click();
               }}
